@@ -26,5 +26,5 @@ let socketServer: SocketServer = new SocketServer(expressServer, bypass_cors);
 socketServer.start();
 
 //[FINAL] Start yukiTenshi app
-let yukiTenshi = new App(expressServer, socketServer);
+let yukiTenshi = new App(expressServer, socketServer, mySQLClient);
 yukiTenshi.start();
