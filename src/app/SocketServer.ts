@@ -16,7 +16,7 @@ export class SocketServer {
         return this;
     }
     public start(): Server {
-        this.socketServer = new Server((this.expressServer.get()), this.options);
+        this.socketServer = new Server(this.expressServer.get(), this.options);
         this.log(`Server started`, LogLevel.INFO);
         let _this: SocketServer = this;
         this.socketServer.on('connection', (client) => {

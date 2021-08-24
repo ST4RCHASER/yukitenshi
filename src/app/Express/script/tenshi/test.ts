@@ -3,10 +3,10 @@ import { RESTResp } from '@yukiTenshi/utils'
 const router = express.Router();
 router.all('/', (_, res) => {
     const response: RESTResp<never> = {
-        success: false,
-        statusCode: 404,
+        success: true,
+        statusCode: 200,
         message: 'Here is test path by using /tenshi/test.js',
     }
-    res.status(404).send(response)
+    res.status(200).send(response)
 })
 export default router;

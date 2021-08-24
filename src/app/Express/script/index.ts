@@ -1,7 +1,15 @@
-import { ExpressServer } from '@yukiTenshi/app';
-import express,{Router} from 'express';
+import express from 'express';
+import { RESTResp } from '@yukiTenshi/utils'
 const router = express.Router();
 router.all('/', (_, res) => {
-    res.json({success: true, message: "Welcome to Yuki-Tenshi project!", guide: "You can change this message by change file app/App/Express/script/index.ts"});
+    const response: RESTResp<object> = {
+        success: true,
+        statusCode: 200,
+        message: 'Welcome to Yuki-Tenshi project!',
+        content: {
+            guide: "You can change this message by change file app/Express/script/index.ts"
+        }
+    }
+    res.status(200).send(response)
 })
 export default router;
