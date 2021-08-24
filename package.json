@@ -7,7 +7,7 @@
     "build": "tsc --build",
     "start": "node ./build/server",
     "serve": "tsc --build && node ./build/server",
-    "dev": "ts-node-dev ./src/server.ts",
+    "dev": "yarn dev && ts-node-dev ./src/server.ts",
     "test": "echo true"
   },
   "author": "ST4RCHASER",
