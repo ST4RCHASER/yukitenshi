@@ -82,5 +82,5 @@ build/
 
 *.map
 
-VSCode directory
+# VSCode directory
 .vscode/
