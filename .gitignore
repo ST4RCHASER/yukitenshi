@@ -1,11 +1,11 @@
 # Logs
-.vscode/
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 bin
+
 # Runtime data
 pids
 *.pid
@@ -82,5 +82,5 @@ build/
 
 *.map
 
-akariDB.json
-anilist.json
+VSCode directory
+.vscode/
