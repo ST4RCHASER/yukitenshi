@@ -4,7 +4,5 @@ export enum LogType {
     SOCKET_SERVER = " (SOCKET)",
     DATABASE = " (DATABASE)",
     PLAYER = " (PLAYER)",
-    ONLINE_YUKARI = " (ONLINE-YUKARI)",
-    OFFLINE_YUKARI = " (OFFLINE-YUKARI)",
     RAW = ""
 }
