@@ -5,7 +5,7 @@ router.all('/', (_, res) => {
     const response: RESTResp<never> = {
         success: true,
         statusCode: 200,
-        message: 'Here is test path by using /tenshi/test.js',
+        message: 'Here is test path in: /tenshi/test.js',
     }
     res.status(200).send(response)
 })

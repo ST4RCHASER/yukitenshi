@@ -7,7 +7,7 @@ router.all('/', (_, res) => {
         statusCode: 200,
         message: 'Welcome to Yuki-Tenshi project!',
         content: {
-            guide: "You can change this message by change file app/Express/script/index.ts"
+            guide: "You can change this message by edit file in: app/Express/script/index.ts"
         }
     }
     res.status(200).send(response)
